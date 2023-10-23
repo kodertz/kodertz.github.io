@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.navbar {
+    background-color: #f8f9fa; /* Light background color */
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-color: #343a40; /* Dark color for the toggler icon */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #343a40; /* Dark text color for links */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #007bff; /* Link color on hover */
+}
+
+.custom-caption {
+    color: #fff; /* Text color */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    padding: 10px; /* Add padding for better readability */
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+section {
+    height: 100vh; /* This sets each section's height to 100% of the viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#about {
+    background-image: url('images/bg1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#projects {
+    background-image: url('images/bg2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#contact {
+    background-image: url('images/bg3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+.projects {
+    margin: 20px 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+
+/* Additional styles for the icon list */
+.icon-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.icon-list li {
+    display: inline-block; /* Change display property to inline-block */
+    margin-right: 20px; /* Add right margin to separate icons */
+}
+
+.icon-list i {
+    font-size: 4rem;
+}
+
+.card {
+    animation: fadeIn 1s ease-in-out;
+    max-width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    border-radius: 100px;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+.card-body{
+    background-color: white;
+}
+
+.card-img-top {
+    object-fit: cover;
+    max-height: 200px; /* Adjust the height as needed */
+}
+
+.card-img-top2 {
+    object-fit: contain;
+    max-height: 600px; /* Adjust the height as needed */
+}
+
+
+#card-img-bg {
+    background-color: transparent;
+}
+
+.prev {
+    object-fit: contain;
+    max-height: 700px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.animated.fadeIn {
+    animation: fadeIn 1s ease-in-out 1s;
+}
